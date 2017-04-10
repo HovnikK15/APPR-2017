@@ -12,14 +12,14 @@ V tabeli bom navedel naslednje podatke za zadnje desetletje:
 - leto (razvrščevalna spremenljivka)
 - BDPpc (številska spremenljivka)
 - rast BDP (številska spremenljivka)
-- % brezposelnosti
-- struktura BDP
+- % brezposelnosti (številska spremenljivka)
+- struktura BDP (številska spremenljivka)
 
 Kasneje bom analiziral še gospodarstvo drugih evropskih držav. V tabeli bom navedel naslednje podatke, prav tako za zadnje desetletje:
 
 - ime države (imenska spremenljivka)
-- BDP
-- struktura BDP
+- BDP (številska spremenljivka)
+- struktura BDP (številska spremenljivka)
 
 ## Program
 
