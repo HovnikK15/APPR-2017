@@ -4,7 +4,8 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2016/17
 
 ## Tematika
 
-Izbral sem si temo z naslovom Analiza gospodarstva Velike Britanije in primerjava gospodarstva z evropskimi državami. Najprej bom natančneje analiziral posamezne komponente, ki vplivajo na gospodarstvo, kot so: BDP, brezposelnost, izvoz/uvoz,.. Nato bom primerjal še gospodarstvo VB z evropskim gospodarstvom, katere komponente najbolj vplivajo na gospodarstvo v posameznih evropskih državah..
+Izbral sem si temo z naslovom Analiza gospodarstva Velike Britanije in primerjava z evropskimi državami. Najprej bom natančneje analiziral posamezne komponente, ki vplivajo na gospodarstvo, kot so: BDP, brezposelnost, izvoz/uvoz,.. Nato bom primerjal še gospodarstvo VB z evropskim gospodarstvom, katere komponente najbolj vplivajo na gospodarstvo v posameznih evropskih državah..
+
 Podatki so dostopni na SURS-u in na Eurostatu.
 V tabeli bom navedel naslednje podatke za zadnje desetletje:
 - BDP (urejenostna spremenljivka)
@@ -13,10 +14,13 @@ V tabeli bom navedel naslednje podatke za zadnje desetletje:
 - rast BDP (številska spremenljivka)
 - % brezposelnosti
 - struktura BDP
-Kasneje bom analiziral še gospodatrstvo drugih evropskih držav. V tabeli bom navedel naslednje podatke, prav tako za zadnje desetletje:
+
+Kasneje bom analiziral še gospodarstvo drugih evropskih držav. V tabeli bom navedel naslednje podatke, prav tako za zadnje desetletje:
+
 - ime države (imenska spremenljivka)
 - BDP
 - struktura BDP
+
 ## Program
 
 Glavni program in poročilo se nahajata v datoteki `projekt.Rmd`. Ko ga prevedemo,
