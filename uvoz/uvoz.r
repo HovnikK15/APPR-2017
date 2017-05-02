@@ -20,11 +20,12 @@ library(readr)
 uvozi<-function(){
   return(read.csv(file="Meddrzavne_selitve.csv",
                   col.names=c("vrsta_migrantov", "Starostna_skupina", "SPOL" , "LETO", "ST_MIGRANTOV"),
-                  header=FALSE,
-                  na.strings = "-",
-                  fileEncoding = "UTF-8",
-                  as.is = FALSE), )
+                  locale=locale(encoding="Windows-1250"),
+                  skip=4, n_max=42,
+                  na=c("", " ", "-")))
 }
+
+
 
 # Zapišimo podatke v razpredelnico obcine
 obcine <- uvozi.obcine()
