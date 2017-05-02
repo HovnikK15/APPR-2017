@@ -4,22 +4,19 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2016/17
 
 ## Tematika
 
-Izbral sem si temo z naslovom Analiza gospodarstva Velike Britanije in primerjava z evropskimi državami. Najprej bom natančneje analiziral posamezne komponente, ki vplivajo na gospodarstvo, kot so: BDP, brezposelnost, izvoz/uvoz,.. Nato bom primerjal še gospodarstvo VB z evropskim gospodarstvom, katere komponente najbolj vplivajo na gospodarstvo v posameznih evropskih državah..
-JOWW
-Podatki so dostopni na SURS-u in na Eurostatu.
-V tabeli bom navedel naslednje podatke za zadnje desetletje:
-- BDP (urejenostna spremenljivka)
-- leto (razvrščevalna spremenljivka)
-- BDPpc (številska spremenljivka)
-- rast BDP (številska spremenljivka)
-- % brezposelnosti (številska spremenljivka)
-- struktura BDP (številska spremenljivka)
+Za predmet analize sem si izbral Analizo priseljevanja in izseljevanja prebivalstva v oz. iz Slovenije, od leta 2000 naprej. S pridobljenimi podatki iz spleta bom analiziral selitve po posameznih regijah, finančnem položaju ter  starostnih skupinah.
 
-Kasneje bom analiziral še gospodarstvo drugih evropskih držav. V tabeli bom navedel naslednje podatke, prav tako za zadnje desetletje:
+Podatke sem črpal iz naslednje strani: 
 
-- ime države (imenska spremenljivka)
-- BDP (številska spremenljivka)
-- struktura BDP (številska spremenljivka)
+Statistični urad RS: http://pxweb.stat.si/pxweb/Database/Dem_soc/Dem_soc.asp 
+
+Zasnova podatkovnega modela:
+•	prva tabela – Meddržavne selitve po starostnih skupinah, državljanstvu in spolu, Slovenija, letno
+•	druga tabela - Meddržavne selitve po državljanstvu, državah prejšnjega, prihodnjega prebivališča in spolu, Slovenija, letno 
+•	tretja tabela - Selitveno gibanje prebivalstva po občinah, Slovenija, letno 
+•	četrta tabela - Priseljeni tujci po namenu priselitve in državi državljanstva, Slovenija, letno 
+•	peta tabela - Priseljeni prebivalci, stari 15 ali več let, po izobrazbi, državljanstvu, starostnih skupinah, spolu, Slovenija, letno 
+
 
 ## Program
 
