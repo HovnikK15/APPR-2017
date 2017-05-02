@@ -11,7 +11,7 @@ Podatke sem črpal iz naslednje strani:
 Statistični urad RS: http://pxweb.stat.si/pxweb/Database/Dem_soc/Dem_soc.asp 
 
 Zasnova podatkovnega modela:
--prva tabela – Meddržavne selitve po starostnih skupinah, državljanstvu in spolu, Slovenija, letno
+* prva tabela – Meddržavne selitve po starostnih skupinah, državljanstvu in spolu, Slovenija, letno
 -druga tabela - Meddržavne selitve po državljanstvu, državah prejšnjega, prihodnjega prebivališča in spolu, Slovenija, letno 
 -tretja tabela - Selitveno gibanje prebivalstva po občinah, Slovenija, letno 
 -četrta tabela - Priseljeni tujci po namenu priselitve in državi državljanstva, Slovenija, letno 
