@@ -15,24 +15,22 @@ View(tabela)
 
 # Funkcija, ki uvozi podatke iz datoteke Meddrzavne_selitve.csv
 library(readr)
-uvozi(Meddrzavne_selitve) <- function(preselitve) {
-  
-stolpci <- c("vrsta_migrantov", "Starostna_skupina", "SPOL" , "LETO", "ST_MIGRANTOV")
-  
-data <- read.csv2(file="~/APPR-2017/podatki/Meddrzavne_selitve.csv", 
-               locale=locale(encoding="Windows-1250"),
-               col.names=stolpci, skip=4, n_max=42,
-               na=c("", " ", "-"))
 
-  
-return(data)
+
+uvozi<-function(){
+  return(read.csv(file="Meddrzavne_selitve.csv",
+                  col.names=c("vrsta_migrantov", "Starostna_skupina", "SPOL" , "LETO", "ST_MIGRANTOV"),
+                  header=FALSE,
+                  na.strings = "-",
+                  fileEncoding = "UTF-8",
+                  as.is = FALSE), )
 }
 
-# Zapišimo podatke v razpredelnico preselitve
-preselitve <- uvozi.preselitve()
+# Zapišimo podatke v razpredelnico obcine
+obcine <- uvozi.obcine()
 
-# Zapišimo podatke v razpredelnico Meddrzavne_selitve
-Meddrzavne_selitve <- uvozi.Meddrzavne_selitve(levels(preselitve$preselitve))
+# Zapišimo podatke v razpredelnico druzine.
+druzine <- uvozi.druzine(levels(obcine$obcina))
 
 # Če bi imeli več funkcij za uvoz in nekaterih npr. še ne bi
 # potrebovali v 3. fazi, bi bilo smiselno funkcije dati v svojo
