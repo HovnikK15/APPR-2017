@@ -8,21 +8,22 @@ tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable sortable']") %>%
   .[[6]] %>% html_table(dec = ".")
 summary(tabela)
 
-colnames(tabela) <- c("drzava", "stevilo priseljencev", "% priseljencev")
+colnames(tabela) <- c("spol", "drzava", "leto", "stevilo priseljencev")
 sl <- locale("sl", decimal_mark = ".")
 
 View(tabela)
 
 # Funkcija, ki uvozi podatke iz datoteke Meddrzavne_selitve.csv
+stolpci <- c("vrsta_migrantov", "Starostna_skupina", "SPOL" , "LETO", "ST_MIGRANTOV")
 library(readr)
 
 
-uvozi<-function(){
-  return(read.csv(file="Meddrzavne_selitve.csv",
-                  col.names=c("vrsta_migrantov", "Starostna_skupina", "SPOL" , "LETO", "ST_MIGRANTOV"),
-                  locale=locale(encoding="Windows-1250"),
-                  skip=4, n_max=42,
-                  na=c("", " ", "-")))
+uvozi <-function(){
+  return(read.csv(file="podatki/05N1004Ss.csv",
+                  col.names=stolpci,
+                  fileEncoding = "UTF-8",
+                  header=FALSE,
+                  as.is = FALSE))
 }
 
 
