@@ -17,8 +17,13 @@ runtime: shiny
 
 # Uvoz vseh potrebnih knjižnic
 source("lib/libraries.r", encoding = "UTF-8")
+library(readr)
+library(knitr)
+library(ggplot2)
+library(shiny)
+library(rmarkdown)
+library(dplyr) 
 ```
-
 # Izbira teme
 
 Izbral sem si temo migracij v Sloveniji od leta 2000 dalje.  V projektu bom analiziral priselitve in odselitve prebivalstva, tako tujega kot tudi državljanov RS po letih, starostnih skupinah, spolu. Posebej bom primerjal še v katerih regijah je prišlo do porasta preseljevanja ter tudi koliko slovenskih državljanov se je izselilo iz Slovenije ali preselilo nazaj v Slovenijo
@@ -31,11 +36,14 @@ Izbral sem si temo migracij v Sloveniji od leta 2000 dalje.  V projektu bom anal
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
-Uvozili sem podatke o preselitvah CSV s statističnega urada ter v obliki HTML. Poglejmo si začetka obeh uvoženih razpredelnic.
+Uvozili sem podatke o preselitvah v obliki csv s statističnega urada ter v obliki HTML. Poglejmo si začetke vseh uvoženih razpredelnic.
 
 ```{r razpredelnice}
-kable(head(druzine))
-head(obcine)
+kable(head(tabela1))
+kable(head(tabela2))
+kable(head(tabela3))
+kable(head(tabela4))
+head(tabela1)
 ```
 
 Slika \ref{fig:histogram} prikazuje porazdelitev števila naselij v občinah.

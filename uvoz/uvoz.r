@@ -61,7 +61,7 @@ uvozi3 <- function() {
                    col_names = c("Vrsta_migrantov", "Starostna_skupina", "Leto", "Spol","Drzavljanstvo", "Stevilo"),
                    locale=locale(encoding="Windows-1250"),skip = 7,  n_max = 4525) 
   tab3 <- tab3 %>% fill(1:5) %>% drop_na(Stevilo) %>% filter(Starostna_skupina != "Starostne skupine - SKUPAJ")
-  tab3$leta_min <- tab$Starostna_skupina %>% strapplyc("(^[0-9]+)") %>% unlist() %>% parse_number()
+  tab3$leta_min <- tab3$Starostna_skupina %>% strapplyc("(^[0-9]+)") %>% unlist() %>% parse_number()
   tab3$Starostna_skupina <- NULL
 
   return(tab3)
