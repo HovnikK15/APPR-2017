@@ -1,15 +1,16 @@
-Priseljeni iz tujine;;;;
- ;Starostne skupine - SKUPAJ;;;
- ; ;2000;;
- ; ; ;Moški;4397
- ; ; ;Ženske;1788
- ; ;2001;;
- ; ; ;Moški;5321
- ; ; ;Ženske;2482
- ; ;2002;;
- ; ; ;Moški;6216
- ; ; ;Ženske;2918
- ; ;2003;;
+vrsta;starostna skupina;leto;spol;vrednost
+Priseljeni iz tujine; ;;;
+Priseljeni iz tujine; SKUPAJ;;;
+Priseljeni iz tujine; SKUPAJ;2000;;
+Priseljeni iz tujine; SKUPAJ;2000;Moški;4397
+Priseljeni iz tujine; SKUPAJ;2000;Ženske;1788
+;;;;
+Priseljeni iz tujine; SKUPAJ;2001;Moški;5321
+Priseljeni iz tujine; SKUPAJ;2001;Ženske;2482
+Priseljeni iz tujine; SKUPAJ;2002;;
+Priseljeni iz tujine; SKUPAJ; ;Moški;6216
+Priseljeni iz tujine; SKUPAJ; ;Ženske;2918
+Priseljeni iz tujine; SKUPAJ;2003;;
  ; ; ;Moški;6229
  ; ; ;Ženske;3050
  ; ;2004;;
@@ -930,55 +931,6 @@ Priseljeni iz tujine;;;;
  ; ;2015;;
  ; ; ;Moški;17
  ; ; ;Ženske;27
- ;Povpreèna starost;;;
- ; ;2000;;
- ; ; ;Moški;33.6
- ; ; ;Ženske;32.1
- ; ;2001;;
- ; ; ;Moški;33.9
- ; ; ;Ženske;31.mar
- ; ;2002;;
- ; ; ;Moški;33.9
- ; ; ;Ženske;32.7
- ; ;2003;;
- ; ; ;Moški;33.2
- ; ; ;Ženske;32.9
- ; ;2004;;
- ; ; ;Moški;33.2
- ; ; ;Ženske;31.6
- ; ;2005;;
- ; ; ;Moški;32.5
- ; ; ;Ženske;31.jan
- ; ;2006;;
- ; ; ;Moški;32.3
- ; ; ;Ženske;30.avg
- ; ;2007;;
- ; ; ;Moški;33.0
- ; ; ;Ženske;30.avg
- ; ;2008;;
- ; ; ;Moški;33.1
- ; ; ;Ženske;30.jul
- ; ;2009;;
- ; ; ;Moški;33.1
- ; ; ;Ženske;30.jul
- ; ;2010;;
- ; ; ;Moški;33.8
- ; ; ;Ženske;31.4
- ; ;2011;;
- ; ; ;Moški;34.6
- ; ; ;Ženske;32.8
- ; ;2012;;
- ; ; ;Moški;34.0
- ; ; ;Ženske;31.0
- ; ;2013;;
- ; ; ;Moški;34.1
- ; ; ;Ženske;31.mar
- ; ;2014;;
- ; ; ;Moški;33.8
- ; ; ;Ženske;31.4
- ; ;2015;;
- ; ; ;Moški;33.2
- ; ; ;Ženske;30.sep
 Odseljeni v tujino;;;;
  ;Starostne skupine - SKUPAJ;;;
  ; ;2000;;
@@ -1911,55 +1863,6 @@ Odseljeni v tujino;;;;
  ; ;2015;;
  ; ; ;Moški;28
  ; ; ;Ženske;52
- ;Povpreèna starost;;;
- ; ;2000;;
- ; ; ;Moški;36.5
- ; ; ;Ženske;35.8
- ; ;2001;;
- ; ; ;Moški;33.8
- ; ; ;Ženske;34.4
- ; ;2002;;
- ; ; ;Moški;34.2
- ; ; ;Ženske;35.0
- ; ;2003;;
- ; ; ;Moški;34.3
- ; ; ;Ženske;34.4
- ; ;2004;;
- ; ; ;Moški;33.9
- ; ; ;Ženske;34.7
- ; ;2005;;
- ; ; ;Moški;33.7
- ; ; ;Ženske;34.8
- ; ;2006;;
- ; ; ;Moški;33.6
- ; ; ;Ženske;34.8
- ; ;2007;;
- ; ; ;Moški;34.8
- ; ; ;Ženske;34.3
- ; ;2008;;
- ; ; ;Moški;38.1
- ; ; ;Ženske;38.6
- ; ;2009;;
- ; ; ;Moški;35.2
- ; ; ;Ženske;35.4
- ; ;2010;;
- ; ; ;Moški;36.0
- ; ; ;Ženske;35.9
- ; ;2011;;
- ; ; ;Moški;38.1
- ; ; ;Ženske;36.4
- ; ;2012;;
- ; ; ;Moški;38.3
- ; ; ;Ženske;37.8
- ; ;2013;;
- ; ; ;Moški;37.4
- ; ; ;Ženske;35.7
- ; ;2014;;
- ; ; ;Moški;36.8
- ; ; ;Ženske;33.8
- ; ;2015;;
- ; ; ;Moški;36.4
- ; ; ;Ženske;33.1
 ;;;;
 Vir: Statistièni urad Republike Slovenije. ;;;;
  ;;;;

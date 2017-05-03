@@ -4,24 +4,6 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2016/17
 
 ## Tematika
 
-<<<<<<< HEAD
-Izbral sem si temo z naslovom Analiza gospodarstva Velike Britanije in primerjava z evropskimi državami. Najprej bom natančneje analiziral posamezne komponente, ki vplivajo na gospodarstvo, kot so: BDP, brezposelnost, izvoz/uvoz,.. Nato bom primerjal še gospodarstvo VB z evropskim gospodarstvom, katere komponente najbolj vplivajo na gospodarstvo v posameznih evropskih državah..
-
-Podatki so dostopni na Eurostatu.
-V tabeli bom navedel naslednje podatke za zadnje desetletje:
-- leto (razvrščevalna spremenljivka)
-- BDP (urejenostna spremenljivka)
-- BDPpc (številska spremenljivka)
-- rast BDP (številska spremenljivka)
-- % brezposelnosti (številska spremenljivka)
-- struktura BDP (številska spremenljivka)
-
-Kasneje bom analiziral še gospodarstvo drugih evropskih držav. V tabeli bom navedel naslednje podatke, prav tako za zadnje desetletje:
-
-- ime države (imenska spremenljivka)
-- BDP (številska spremenljivka)
-- struktura BDP (številska spremenljivka)
-=======
 Za predmet analize sem si izbral Analizo priseljevanja in izseljevanja prebivalstva v oz. iz Slovenije, od leta 2000 naprej. S pridobljenimi podatki iz spleta bom analiziral selitve po posameznih regijah, finančnem položaju ter  starostnih skupinah.
 
 Podatke sem črpal iz naslednje strani: 
@@ -34,8 +16,6 @@ Zasnova podatkovnega modela:
 * tretja tabela - Selitveno gibanje prebivalstva po občinah, Slovenija, letno 
 * četrta tabela - Priseljeni tujci po namenu priselitve in državi državljanstva, Slovenija, letno 
 * peta tabela - Priseljeni prebivalci, stari 15 ali več let, po izobrazbi, državljanstvu, starostnih skupinah, spolu, Slovenija, letno 
-
->>>>>>> f5ac42427be933eb5485786fb4e869bf0fd74663
 
 ## Program
 

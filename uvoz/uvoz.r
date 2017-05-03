@@ -14,17 +14,24 @@ sl <- locale("sl", decimal_mark = ".")
 View(tabela)
 
 # Funkcija, ki uvozi podatke iz datoteke Meddrzavne_selitve.csv
-stolpci <- c("vrsta_migrantov", "Starostna_skupina", "SPOL" , "LETO", "ST_MIGRANTOV")
+
 library(readr)
+library(tidyr)
+library(gsubfn)
+library(dplyr)
 
-
-uvozi <-function(){
-  return(read.csv(file="podatki/05N1004Ss.csv",
-                  col.names=stolpci,
-                  fileEncoding = "UTF-8",
-                  header=FALSE,
-                  as.is = FALSE))
+uvozi <- function() {
+  tab <- read_csv2(file="podatki/05N1004Ss.csv",
+                   col_names = c("Vrsta_migrantov", "Starostna_skupina", "Leto", "Spol", "Stevilo"),
+                   locale=locale(encoding="Windows-1250"),skip = 4,  n_max = 1865) 
+  tab <- tab %>% fill(1:4) %>% drop_na(Stevilo) %>% filter(Starostna_skupina != "SKUPAJ",
+                                                           Starostna_skupina != "Starostne skupine - SKUPAJ")
+  tab$leta_min <- tab$Starostna_skupina %>% strapplyc("(^[0-9]+)") %>% unlist() %>% parse_number()
+  tab$Starostna_skupina <- NULL
+  return(tab)
 }
+tabela <- uvozi()
+
 
 
 
