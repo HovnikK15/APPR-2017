@@ -21,7 +21,7 @@ source("lib/libraries.r", encoding = "UTF-8")
 
 # Izbira teme
 
-Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
+Izbral sem si temo migracij v Sloveniji od leta 2000 dalje.  V projektu bom analiziral priselitve in odselitve prebivalstva, tako tujega kot tudi državljanov RS po letih, starostnih skupinah, spolu. Posebej bom primerjal še v katerih regijah je prišlo do porasta preseljevanja ter tudi koliko slovenskih državljanov se je izselilo iz Slovenije ali preselilo nazaj v Slovenijo
 
 ***
 
@@ -31,8 +31,7 @@ Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
+Uvozili sem podatke o preselitvah CSV s statističnega urada ter v obliki HTML. Poglejmo si začetka obeh uvoženih razpredelnic.
 
 ```{r razpredelnice}
 kable(head(druzine))
