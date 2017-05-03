@@ -19,7 +19,6 @@ library(readr)
 library(tidyr)
 library(gsubfn)
 library(dplyr)
-
 uvozi <- function() {
   tab <- read_csv2(file="podatki/05N1004Ss.csv",
                    col_names = c("Vrsta_migrantov", "Starostna_skupina", "Leto", "Spol", "Stevilo"),
@@ -46,3 +45,4 @@ druzine <- uvozi.druzine(levels(obcine$obcina))
 # datoteko, tukaj pa bi klicali tiste, ki jih potrebujemo v
 # 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
 # fazah.
+
