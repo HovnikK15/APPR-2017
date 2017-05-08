@@ -1,16 +1,16 @@
 vrsta;starostna skupina;leto;spol;vrednost
 Priseljeni iz tujine; ;;;
-Priseljeni iz tujine; SKUPAJ;;;
-Priseljeni iz tujine; SKUPAJ;2000;;
-Priseljeni iz tujine; SKUPAJ;2000;Moški;4397
-Priseljeni iz tujine; SKUPAJ;2000;Ženske;1788
+; SKUPAJ;;;
+;;2000;;
+;;2000;Moški;4397
+;;2000;Ženske;1788
 ;;;;
-Priseljeni iz tujine; SKUPAJ;2001;Moški;5321
-Priseljeni iz tujine; SKUPAJ;2001;Ženske;2482
-Priseljeni iz tujine; SKUPAJ;2002;;
-Priseljeni iz tujine; SKUPAJ; ;Moški;6216
-Priseljeni iz tujine; SKUPAJ; ;Ženske;2918
-Priseljeni iz tujine; SKUPAJ;2003;;
+;;2001;Moški;5321
+;;2001;Ženske;2482
+;;2002;;
+;; ;Moški;6216
+;; ;Ženske;2918
+;;2003;;
  ; ; ;Moški;6229
  ; ; ;Ženske;3050
  ; ;2004;;
