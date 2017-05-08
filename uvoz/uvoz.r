@@ -1,5 +1,5 @@
 # 2. faza: Uvoz podatkov
-
+#inštaliraj HML in rvest
 # Funkcija, ki uvozi preselitve iz Wikipedije
 
 library(rvest)
@@ -10,9 +10,7 @@ uvozihtml <- function() {
   tabhtml <- html %>% html_nodes(xpath="//table") %>% .[[1]] %>% html_table(fill = TRUE) %>%
     apply(1, . %>% { c(.[is.na(.)], .[!is.na(.)]) }) %>% t() %>% data.frame()
   colnames(tabhtml) <-c("Leto", "Drzava_prihodnjega_prebivalisca", "Drzavljanstvo","Spol", "Status", "Stevilo")
-
-  
-  return(html)
+  return(tabhtml)
   }
 html1 <- uvozihtml()
 
