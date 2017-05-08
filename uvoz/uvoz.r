@@ -2,31 +2,19 @@
 
 # Funkcija, ki uvozi preselitve iz Wikipedije
 
-link <- "https://en.wikipedia.org/wiki/Immigration_to_Europe#Slovenia"
-stran <- html_session(link) %>% read_html()
-tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable sortable']") %>%
-  .[[6]] %>% html_table(dec = ".")
-summary(tabela)
-
-colnames(tabela) <- c("spol", "drzava", "leto", "stevilo priseljencev")
-sl <- locale("sl", decimal_mark = ".")
-
-View(tabela)
-
+library(rvest)
 
 uvozihtml <- function() {
+  html <- file("podatki/html1.htm") %>% 
+      read_html(encoding = "Windows-1250")
+  tabhtml <- html %>% html_nodes(xpath="//table") %>% .[[1]] %>% html_table(fill = TRUE) %>%
+    apply(1, . %>% { c(.[is.na(.)], .[!is.na(.)]) }) %>% t() %>% data.frame()
+  colnames(tabhtml) <-c("Leto", "Drzava_prihodnjega_prebivalisca", "Drzavljanstvo","Spol", "Status", "Stevilo")
 
-html <- file("podatki/html1.html") %>% readLines()
-podatkiHTML <- grep("var dataValues", html, value = TRUE) %>%
-  strapplyc('var dataValues="([^"]+)"') %>% .[[1]] %>%
-  strsplit("|", fixed=TRUE) %>% unlist() %>%
-  matrix(ncol=6, byrow=TRUE)
-return(html)
-}
+  
+  return(html)
+  }
 html1 <- uvozihtml()
-
-
-
 
 # Funkcija, ki uvozi podatke iz csv datotek v mapi "podatki"
 
@@ -44,8 +32,9 @@ uvozi1 <- function() {
   tab$Starostna_skupina <- NULL
   return(tab)
 }
+# Zapišimo podatke v razpredelnico tabela1
 tabela1 <- uvozi1()
-
+#druga tabela
 uvozi2 <- function() {
   tab2 <- read_csv2(file="podatki/tabela2.csv",
                    col_names = c("Vrsta_migrantov", "Drzava_drzavljanstva", "Leto", "Spol", "Stevilo"),
@@ -76,15 +65,6 @@ uvozi4 <- function() {
   return(tab4)
 }
 tabela4 <- uvozi4()
-
-
-
-
-# Zapišimo podatke v razpredelnico obcine
-obcine <- uvozi.obcine()
-
-# Zapišimo podatke v razpredelnico druzine.
-druzine <- uvozi.druzine(levels(obcine$obcina))
 
 # Če bi imeli več funkcij za uvoz in nekaterih npr. še ne bi
 # potrebovali v 3. fazi, bi bilo smiselno funkcije dati v svojo

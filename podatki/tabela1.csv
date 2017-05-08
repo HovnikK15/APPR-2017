@@ -1,22 +1,22 @@
 vrsta;starostna skupina;leto;spol;vrednost
 Priseljeni iz tujine; ;;;
-<<<<<<< HEAD:podatki/05N1004Ss.csv
-; SKUPAJ;;;
-;;2000;;
-;;2000;Moški;4397
+Priseljeni iz tujine;;;;
+Priseljeni iz tujine; SKUPAJ;;;
+Priseljeni iz tujine; SKUPAJ;2000;;
+Priseljeni iz tujine; SKUPAJ;2000;Moški;4397
 ;;2000;Ženske;1788
 ;;;;
 ;;2001;Moški;5321
 ;;2001;Ženske;2482
-=======
-Priseljeni iz tujine; SKUPAJ;;;
-Priseljeni iz tujine; SKUPAJ;2000;;
-Priseljeni iz tujine; SKUPAJ;;Moški;4397
+;;;;
+;;;;
+;;2000;;
+;;;Moški;4397
 ;;;Ženske;1788
 ;;2001;;
 ;;;Moški;5321
 ;;;Ženske;2482
->>>>>>> f4fa7e3c831249af9493d226d05e0e095009ad9a:podatki/tabela1.csv
+;;;;
 ;;2002;;
 ;; ;Moški;6216
 ;; ;Ženske;2918
