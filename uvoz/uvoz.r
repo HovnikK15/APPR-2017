@@ -13,7 +13,7 @@ sl <- locale("sl", decimal_mark = ".")
 
 View(tabela)
 
-
+# tukaj mi program ne zazna html datoteke
 uvozihtml <- function() {
 
 html <- file("podatki/html1.html") %>% readLines()
