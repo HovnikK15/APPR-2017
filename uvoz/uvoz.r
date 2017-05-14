@@ -1,24 +1,10 @@
 # 2. faza: Uvoz podatkov
 #inštaliraj HML in rvest
-# Funkcija, ki uvozi preselitve iz Wikipedije
+# Funkcija, ki uvozi preselitve iz html datoteke
 
-<<<<<<< HEAD
-link <- "https://en.wikipedia.org/wiki/Immigration_to_Europe#Slovenia"
-stran <- html_session(link) %>% read_html()
-tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable sortable']") %>%
-  .[[6]] %>% html_table(dec = ".")
-summary(tabela)
-
-colnames(tabela) <- c("spol", "drzava", "leto", "stevilo priseljencev")
-sl <- locale("sl", decimal_mark = ".")
-
-View(tabela)
-
-# tukaj mi program ne zazna html datoteke
-=======
 library(rvest)
 
->>>>>>> 40916f512cdb18bfbdb7a8645610e787ff2bcfd7
+
 uvozihtml <- function() {
   html <- file("podatki/html1.htm") %>% 
       read_html(encoding = "Windows-1250")
